@@ -74,7 +74,7 @@ public class Parking {
             int ocupadas = 0;
 
             for (String m : matriculas) {
-                  if (m != null);
+                  if (m != null)
                   ocupadas++;
             }
             return ocupadas;

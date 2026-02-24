@@ -6,7 +6,6 @@ public static void main(String[] args) {
       
       Scanner sc = new Scanner(System.in);
       Parking parking = new Parking("Parking Centro", 10);
-
       int opcion = 0;
 
       do{
@@ -16,7 +15,11 @@ public static void main(String[] args) {
             System.out.println("3. Mostrar");
             System.out.println("4. Salir ");
             System.out.print("Seleccione una opcion: ");
+            try{
             opcion = Integer.parseInt(sc.nextLine());
+            }catch(Exception e){
+                  opcion=0;
+            }
 
             switch(opcion){
                   case 1:
