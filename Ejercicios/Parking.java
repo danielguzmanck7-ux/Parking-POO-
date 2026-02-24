@@ -1,7 +1,5 @@
 import java.util.ArrayList;
 
-import java.util.*;
-
 public class Parking {
 
       private ArrayList<String> matriculas;
@@ -76,14 +74,13 @@ public class Parking {
             int ocupadas = 0;
 
             for (String m : matriculas) {
-                  if (m != null)
-                        ;
+                  if (m != null);
                   ocupadas++;
             }
             return ocupadas;
       }
 
-      public int getPlazasPlazasLibres(){
+      public int getPlazasLibres(){
             return getPlazasTotales() - getPlazasOcupadas();
       }
 
@@ -95,9 +92,9 @@ public class Parking {
 
             for (int i = 0 ; i < matriculas.size() ; i++){
                   if(matriculas.get(i) == null){
-                        resultado += "Plaza" + i + ": (Vacia)\n";
+                        resultado += "Plaza " + (i+1) + ": (Vacia)\n";
                   }else{
-                        resultado += "Plaza" + i + matriculas.get(i) + "\n";
+                        resultado += "Plaza " + (i+1) + ": " + matriculas.get(i) + "\n";
                   }
             }
             return resultado;
