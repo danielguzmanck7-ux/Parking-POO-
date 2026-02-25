@@ -1,4 +1,4 @@
-package EjerciciosRepaso;
+package EjerciciosRepaso.GestionEmpleados;
 
 public class Gestor extends Empleado {
 

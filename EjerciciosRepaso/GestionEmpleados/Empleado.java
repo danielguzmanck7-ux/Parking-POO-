@@ -1,4 +1,4 @@
-package EjerciciosRepaso;
+package EjerciciosRepaso.GestionEmpleados;
 
 public abstract class Empleado {
 
