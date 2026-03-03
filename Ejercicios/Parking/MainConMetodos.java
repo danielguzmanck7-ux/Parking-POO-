@@ -13,8 +13,9 @@ public static void main(String[] args) {
             accion(op,parking);
 
       }while(op != 4);
-
+      sc.close();
 }
+
       public static int  menu(){
             Scanner sc = new Scanner(System.in);
             int opcion;
@@ -34,6 +35,7 @@ public static void main(String[] args) {
             }catch(Exception e){
                   opcion = 0;
             }
+            sc.close();
             return opcion;
       } 
 
@@ -50,7 +52,7 @@ public static void main(String[] args) {
 
       public static void entradaCoche(Parking parking){
 
-      boolean correcto = false;
+      
       Scanner sc = new Scanner (System.in);
             
       try{
@@ -60,7 +62,6 @@ public static void main(String[] args) {
                   int p = Integer.parseInt(sc.nextLine());
 
                   parking.entrada(m,p);
-                  correcto = true;
 
       }catch (ParkingException e){
                   System.out.println("Error" + e.getMensaje());
@@ -70,12 +71,12 @@ public static void main(String[] args) {
       }catch(Exception e){
                   System.out.println(" Error Desconocido  " );
             }
+            sc.close();
       }
 
       public static void salidaCoche(Parking parking){
             
             Scanner sc = new Scanner (System.in);
-            boolean correcto = false;
 
             try{
                   System.out.println("Introduce la matricula");
@@ -96,6 +97,6 @@ public static void main(String[] args) {
                   System.out.println(" Error desconocido " );
 
             }
-
+            sc.close();
       }
 }
