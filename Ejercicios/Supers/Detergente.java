@@ -1,6 +1,6 @@
 package Supers;
 
-public class Detergente implements Esliquido, ConDescuento{
+public class Detergente implements EsLiquido, ConDescuento{
 
       private String marca;
       private double precio;
