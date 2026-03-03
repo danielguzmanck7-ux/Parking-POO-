@@ -2,7 +2,7 @@ package ExamenesPasados.Examen;
 
 import java.time.LocalDate;
 
-public class Revista extends RecursosB implements Prestable {
+public class Revista extends RecursosB {
 
       private int numero;
 
@@ -30,23 +30,6 @@ public class Revista extends RecursosB implements Prestable {
 
       public void setTitulo(String titulo) {
             this.titulo = titulo;
-      }
-
-      @Override
-      public void prestar() throws BiblioException{
-            if (this.disponible = true){
-                  throw new BiblioException("No puede llevarlo no esta aqui ");
-            }
-            setDisponible(false);
-
-      }
-
-      @Override
-      public void devolver() throws BiblioException{
-            if (this.disponible = true){
-                  throw new BiblioException("No puede devolverlo ya esta aqui ");
-            }
-            setDisponible(true);
       }
 
       @Override

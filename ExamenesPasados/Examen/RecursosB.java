@@ -2,7 +2,7 @@ package ExamenesPasados.Examen;
 
 import java.time.LocalDate;
 
-public abstract class RecursosB {
+public abstract class RecursosB implements Prestable{
 
       protected String titulo;
       protected LocalDate anoPublicacion;
@@ -16,7 +16,25 @@ public abstract class RecursosB {
 
       }
 
-      public abstract  void mostrarInformacion();
+      @Override
+      public void prestar() throws BiblioException{
+            if (this.disponible = false){
+                  throw new BiblioException("No puede llevarlo no ta ");
+            }
+
+            setDisponible(false);      
+      }
+
+      @Override
+      public void devolver() throws BiblioException{
+            if (this.disponible = true){
+                  throw new BiblioException("No puede devolverlo ya esta aqui ");
+            }
+            setDisponible(true);
+
+      }
+
+      public abstract void mostrarInformacion();
 
       public LocalDate getAnoPublicacion() {
             return anoPublicacion;
