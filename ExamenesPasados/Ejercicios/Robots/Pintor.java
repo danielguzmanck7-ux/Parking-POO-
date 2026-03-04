@@ -1,9 +1,12 @@
 package ExamenesPasados.Ejercicios.Robots;
 
-public class Pintor extends Robots{
+public class Pintor extends Robots implements Recargable{
+
+      private static int unidades = 0;
 
       private byte  r,v,a;
       private String tipo;
+      private int bateria = 100;
 
       public Pintor(byte r, byte a, byte v){
             super();
@@ -11,6 +14,7 @@ public class Pintor extends Robots{
             this.v = v;
             this.r = r;
             this.a = a;
+            unidades++;
       }
       public byte getA() {
             return a;
@@ -20,6 +24,7 @@ public class Pintor extends Robots{
             return v;
       }
 
+      @Override
       public void trabajar() throws MantenimientoException{
 
             System.out.println(
@@ -40,7 +45,28 @@ public class Pintor extends Robots{
                   ---------------      
                         """);
                         trabajosRealizados++;
+            
+            if(necesitaMantenimiento()){
+                  throw new MantenimientoException(getId() + " ta cansado el robot rey");
+            }
+            bateria -= 10;
       }
+      @Override
+      public int getLimiteTrabajos(){
+            return 3;
+      }
+      public int getUnidadesP(){
+            return unidades;
+      }
+      @Override
+      public void recargar(){
+            bateria = 100;
+      }
+      public int getBateria(){
+            return bateria;
+      }
+
+
 
      
 

@@ -38,7 +38,7 @@ public abstract class Robots {
            return ChronoUnit.DAYS.between(fechaCreacion, LocalDate.now());
       }
 
-      public static int getContador() {
+      public static int getRobotsTotal() {
             return contador;
       }
       public LocalDate getFechaCreacion() {

@@ -2,16 +2,18 @@ package ExamenesPasados.Ejercicios.Robots;
 
 public class Empaquetador extends Robots{
 
+      private static int unidades = 0;
+
       private String tipo;
 
       public Empaquetador (){
             super();
             this.tipo = "empaquetador" + id;
+            unidades++;
       }
 
       public void trabajar() throws MantenimientoException{
 
-            if(10 > )
 
             System.out.println(
                         """
@@ -22,6 +24,17 @@ public class Empaquetador extends Robots{
                   ---------------      
                         """);
                         trabajosRealizados++;
+
+            if(necesitaMantenimiento()){
+                  throw new MantenimientoException(getId() + " ta cansado el robot rey ");
+            }
+      }
+      @Override
+      public int getLimiteTrabajos(){
+            return 10;
+      }
+      public int getUnidadesEP(){
+            return unidades;
       }
 
 }

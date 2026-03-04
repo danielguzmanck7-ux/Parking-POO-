@@ -2,7 +2,7 @@ package ExamenesPasados.Examen;
 
 import java.time.LocalDate;
 
-public class CD extends RecursosB implements Prestable {
+public class CD extends RecursosB{
 
       private String artista;
 

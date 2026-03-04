@@ -1,6 +1,6 @@
 package ExamenesPasados.Ejercicios.Robots;
 
-public class MantenimientoException {
+public class MantenimientoException extends Exception{
 
       private String mensaje;
 
