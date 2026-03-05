@@ -1,4 +1,4 @@
-package ExamenesPasados.Examen;
+package ExamenesPasados.Ejercicios.Examen;
 
 public abstract class Persona {
 

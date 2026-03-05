@@ -1,4 +1,4 @@
-package ExamenesPasados.Examen;
+package ExamenesPasados.Ejercicios.Examen;
 
 public class BiblioException extends Exception {
 
