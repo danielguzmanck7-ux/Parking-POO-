@@ -4,11 +4,9 @@ public class Empaquetador extends Robots{
 
       private static int unidades = 0;
 
-      private String tipo;
-
       public Empaquetador (){
             super();
-            this.tipo = "empaquetador" + id;
+            this.nombre = "empaquetador" + id;
             unidades++;
       }
 

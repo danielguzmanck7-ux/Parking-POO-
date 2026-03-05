@@ -4,23 +4,22 @@ public class Pintor extends Robots implements Recargable{
 
       private static int unidades = 0;
 
-      private byte  r,v,a;
-      private String tipo;
+      private int  r,v,a; 
       private int bateria = 100;
 
-      public Pintor(byte r, byte a, byte v){
+      public Pintor(int r, int a, int v){
             super();
-            this.tipo = "pintor" + id;
+            this.nombre = "pintor" + id;
             this.v = v;
             this.r = r;
             this.a = a;
             unidades++;
       }
-      public byte getA() {
+      public int getA() {
             return a;
-      }public byte getR() {
+      }public int getR() {
             return r;
-      }public byte getV() {
+      }public int getV() {
             return v;
       }
 

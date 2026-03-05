@@ -5,12 +5,16 @@ public class Ensamblador extends Robots implements Recargable{
       private static int unidades = 0;
 
       private TipoEmbalaje embalaje;
-      private String tipo;
       private int bateria = 100;
+
+      public Ensamblador(){
+            super();
+            this.nombre = "ensamblador" + id;
+      }
 
       public Ensamblador(TipoEmbalaje embalaje){
             super();
-            this.tipo = "ensamblador" + id;
+            this.nombre = "ensamblador" + id;
             this.embalaje = embalaje; 
             unidades++;
       }
