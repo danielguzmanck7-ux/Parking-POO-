@@ -36,7 +36,7 @@ public class Pruebas {
 
             linea.anadirRobot(new Pintor(8, 7, 8));
             linea.anadirRobot(new Empaquetador());
-            linea.anadirRobot(new Ensamblador(TipoEmbalaje.Bolsa), 4);
+            linea.anadirRobot(new Ensamblador(TipoEmbalaje.Bolsa));
 
             try {
                   linea.start();
