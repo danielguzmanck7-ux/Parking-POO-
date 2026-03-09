@@ -12,10 +12,6 @@ public class Revista extends RecursosB {
             this.numero=numero;
       }
 
-      public Revista(String string, int i, int j) {
-            //TODO Auto-generated constructor stub
-      }
-
       public String getTitulo() {
             return titulo;
       }

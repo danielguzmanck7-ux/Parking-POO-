@@ -12,10 +12,6 @@ public class CD extends RecursosB{
             this.artista=artista;
       }
 
-      public CD(String string, int i, Artista theBeatles) {
-            //TODO Auto-generated constructor stub
-      }
-
       public String getTitulo() {
             return titulo;
       }
