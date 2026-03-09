@@ -12,6 +12,10 @@ public class Libro extends RecursosB {
             this.autor=autor;
       }
 
+      public Libro(String string, int i, Autor cervantes) {
+            //TODO Auto-generated constructor stub
+      }
+
       public String getTitulo() {
             return titulo;
       }
